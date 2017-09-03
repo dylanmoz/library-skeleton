@@ -1,7 +1,7 @@
 {
-  "name": "glamorous-grid",
+  "name": "<library-name>",
   "version": "1.0.0",
-  "description": "Responsive React grid layout components built with glamorous",
+  "description": "<description>",
   "main": "lib/index.js",
   "scripts": {
     "build": "rimraf lib && babel src -d lib --ignore .spec.js",
@@ -16,19 +16,14 @@
     "url": "git+https://github.com/dylanmoz/glamorous-grid.git"
   },
   "keywords": [
-    "react",
-    "glamorous",
-    "grid",
-    "layout",
-    "responsive",
-    "mobile"
+    "<keywords>"
   ],
   "author": "Dylan Mozlowski <dylan.mozlowski@gmail.com> (http://www.dylanmozlowski.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dylanmoz/glamorous-grid/issues"
+    "url": "https://github.com/dylanmoz/<repo>/issues"
   },
-  "homepage": "https://github.com/dylanmoz/glamorous-grid#readme",
+  "homepage": "https://github.com/dylanmoz/<repo>#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
