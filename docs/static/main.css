@@ -4,6 +4,11 @@ html {
 body {
   min-height: 100%;
   display: flex;
+  background: rgb(246, 247, 251);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 .columns {
