@@ -1,23 +1,31 @@
 // @flow
 
 import React from 'react'
-import Link from 'gatsby-link'
+import GitHubButton from 'react-github-button'
 import Helmet from 'react-helmet'
-
-const NavbarLink = props => (
-  <li className="navbar-item">
-    <Link className="navbar-link" {...props} />
-  </li>
-)
+import { Container, Row, Col } from 'glamorous-grid'
 
 const Header = () => (
   <nav className="navbar">
-    <div className="container">
-      <ul className="navbar-list">
-        <NavbarLink to="/">Home</NavbarLink>
-        {/* <NavbarLink to="/">Home</NavbarLink> */}
-      </ul>
-    </div>
+    <Container style={{ height: '100%' }}>
+      <Row alignItems="center" style={{ height: '100%' }}>
+        <Col span={{ xs: 1, lg: 10/12, xl: 8/12 }} offset={{ xs: 0, lg: 1/12, xl: 2/12 }}>
+          <Row>
+            <Col>
+              <code style={{ textTransform: 'lowercase' }}>REPO</code>
+            </Col>
+            <Col style={{ height: 20 }}>
+              <GitHubButton
+                style={{ float: 'right' }}
+                type="stargazers"
+                namespace="dylanmoz"
+                repo="<repo>"
+              />
+            </Col>
+          </Row>
+        </Col>
+      </Row>
+    </Container>
   </nav>
 )
 
@@ -26,8 +34,8 @@ const TemplateWrapper = ({ children }: any) => (
     <Helmet
       title="glamorous-grid"
       meta={[
-        { name: 'description', content: 'Responsive React grid layout components built with glamorous' },
-        { name: 'keywords', content: 'react, glamorous, grid, layout, responsive, mobile' },
+        { name: 'description', content: '<description>' },
+        { name: 'keywords', content: '<tag1>, <tag2>' },
       ]}
     />
 
